@@ -1,0 +1,172 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.test-app .col {
+  float: right;
+}
+
+.test-app .col.col1 {
+  width: 100px;
+}
+
+.test-app .col.col2 {
+  width: 150px;
+}
+
+.test-app .col.col3 {
+  width: 200px;
+}
+
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  text-align: center;
+}
+
+.main {
+  float: left;
+}
+.right {
+  float: left;
+  text-align: center;
+}
+
+@media only screen and (max-width: 620px) {
+  .menu,
+  .main,
+  .right {
+    width: 100%;
+  }
+}
+
+.main-wrapper {
+  max-width: 135px;
+  display: flex;
+  flex-direction: column;
+}
+.selector-close {
+  border: solid 1px #ddd;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  min-height: 35px;
+}
+div.main-wrapper:hover .selector-close {
+  background-color: #ddd;
+}
+
+div.main-wrapper:hover .choose {
+  background-color: #ddd;
+}
+.display-text {
+  height: 100%;
+  width: 100px;
+}
+.choose {
+  display: flex;
+  max-width: 100%;
+  height: 100%;
+  border: none;
+}
+.arrow {
+  position: relative;
+}
+
+.drop-list {
+  border: solid 1px #ddd;
+  text-align: right;
+  padding: 5px;
+  position: relative;
+  margin-top: 20px;
+  max-height: 300px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.drop-list ul {
+  padding: 0px;
+  width: 100px;
+}
+
+.drop-list li:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid black;
+  position: relative;
+  top: -10px;
+  left: 38px;
+}
+.overflow-ellipsis {
+  line-height: 25px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+
+ul.wrapper {
+  overflow-x: hidden;
+}
