@@ -110,9 +110,10 @@ class UISelect extends Component {
                     <li
                       className={`overflow-ellipsis`}
                       style={
+                        /*
                         this.state.cursor === index
                           ? { backgroundColor: "#ddd" }
-                          : {}
+                          : */ {}
                       }
                       onClick={() => this.click(index)}
                       key={index}
